@@ -1,6 +1,7 @@
 const path = require("path");
 const HtmlWebPackPlugin = require("html-webpack-plugin");
 const ExtractTextPlugin = require("extract-text-webpack-plugin");
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 
 module.exports = {
@@ -8,7 +9,7 @@ module.exports = {
     entry: "./src/index.js",
     output: {
         path: path.join(__dirname, "/dist"),
-        filename: "index_bundle.js"
+        filename: "index_bundle.js",
     },
     resolve: {
         extensions: ['.js', '.jsx', '.ts', '.tsx']
@@ -33,7 +34,7 @@ module.exports = {
             )
         },
             {
-                test: /\.(png|jpg|gif)$/,
+                test: /\.(png|jpg|gif|svg)$/,
                 use: [
                     {
                         loader: 'file-loader'
@@ -48,6 +49,12 @@ module.exports = {
             filename: "index.html",  //target html
             template: "./src/index.html" //source html
         }),
-        new ExtractTextPlugin({ filename: 'css/style.css' })
+        new ExtractTextPlugin({filename: 'css/style.css'}),
+        new CopyWebpackPlugin({
+                patterns: [
+                    {from: 'public', to: 'public'}
+                ]
+            }
+        )
     ]
 }
