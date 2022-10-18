@@ -13,7 +13,7 @@ class Resume extends React.Component {
         this.state = {
             languages: {
                 "C": {
-                    details: "I use C to write interface interface OAM/Security code for Nokia's Service Router OS everyday!"
+                    details: "I use C to write OAM & Security interface code for Nokia's Service Router OS everyday!"
                 },
                 "C++": {
                     details: "I use C++ to write management action for Nokia's Service Router OS on things like ping over NETCONF."
