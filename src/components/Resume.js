@@ -11,7 +11,13 @@ class Resume extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            languages: {
+            languages: 
+                "C": {
+                    details: "I use C to write interface interface OAM/Security code for Nokia's Service Router OS everyday!"
+                },
+                "C++": {
+                    details: "I use C++ to write management action for Nokia's Service Router OS on things like ping over NETCONF."
+                },
                 "Python": {
                     details: "I love programming in Python!"
                 },
@@ -20,7 +26,7 @@ class Resume extends React.Component {
                 },
                 "SQL": {
                     details: "I've used SQL to process big data very efficiently with complex set theory logic and analytic functions."
-                }
+                },
             },
             frameworks: {
                 "React": {
