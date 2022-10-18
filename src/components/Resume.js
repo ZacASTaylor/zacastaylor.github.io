@@ -11,7 +11,7 @@ class Resume extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            languages: 
+            languages: {
                 "C": {
                     details: "I use C to write interface interface OAM/Security code for Nokia's Service Router OS everyday!"
                 },
