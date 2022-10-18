@@ -16,7 +16,7 @@ class Resume extends React.Component {
                     details: "I use C to write OAM & Security interface code for Nokia's Service Router OS everyday!"
                 },
                 "C++": {
-                    details: "I use C++ to write management action for Nokia's Service Router OS on things like ping over NETCONF."
+                    details: "I use C++ to write management actions for Nokia's Service Router OS on things like ping over NETCONF."
                 },
                 "Python": {
                     details: "I love programming in Python!"
