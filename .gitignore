@@ -4,6 +4,7 @@ dist
 build
 yarn.lock
 yarn-error.log
-
+.history
+.vscode
 
 

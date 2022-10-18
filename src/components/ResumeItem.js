@@ -5,19 +5,19 @@ import {UncontrolledPopover, PopoverBody} from 'reactstrap';
 class ResumeItem extends React.Component {
 
     render() {
-        const {name, item, popoverPlacement} = this.props;
+        const {displayName, idName, item, popoverPlacement} = this.props;
 
         return (
             <div>
                 <p>
-                    <span id={name + '-name'}>
-                         {name}
+                    <span id={idName + '-name'}>
+                         {displayName}
                     </span>
 
                     <UncontrolledPopover
                         trigger="click"
                         placement={popoverPlacement}
-                        target={name + '-name'}
+                        target={idName + '-name'}
                     >
                         <PopoverBody>
                             {item.details}
