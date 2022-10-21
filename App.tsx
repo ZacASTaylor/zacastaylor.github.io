@@ -2,10 +2,10 @@ import {hot} from 'react-hot-loader/root';
 import React from 'react';
 import {HashRouter as Router, Route} from 'react-router-dom';
 
-import Header from './components/Header'
-import Home from './components/Home'
-import Resume from './components/Resume'
-import Other from './components/Other'
+import Header from './public/components/Header'
+import Home from './public/components/Home'
+import Resume from './public/components/Resume'
+import Other from './public/components/Other'
 
 
 function App() {
