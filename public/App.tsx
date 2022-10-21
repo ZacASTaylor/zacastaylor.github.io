@@ -11,7 +11,7 @@ import Other from './components/Other'
 function App() {
     return (
         <Router>
-            <div className="main-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+            <div className="main-container d-flex w-100 h-100 mx-auto flex-column" style={{paddingBottom: "10em"}}>
                 <Header/>
                 <Route exact path='/'
                        component={Home}

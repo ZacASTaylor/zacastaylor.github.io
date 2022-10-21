@@ -6,7 +6,7 @@ const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = {
     devtool: 'source-map',
-    entry: "./src/index.js",
+    entry: "./public/index.js",
     output: {
         path: path.join(__dirname, "/dist"),
         filename: "index_bundle.js",
@@ -47,7 +47,7 @@ module.exports = {
         new HtmlWebPackPlugin({
             hash: true,
             filename: "index.html",  //target html
-            template: "./src/index.html" //source html
+            template: "./public/index.html" //source html
         }),
         new ExtractTextPlugin({filename: 'css/style.css'}),
         new CopyWebpackPlugin({

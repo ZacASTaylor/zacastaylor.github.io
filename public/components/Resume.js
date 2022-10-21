@@ -68,7 +68,7 @@ class Resume extends React.Component {
         const {languages, frameworks} = this.state;
 
         return (
-            <div id="resume-paper" className="p-5">
+            <div id="resume-paper">
 
                 <div className="resume-text">
 
